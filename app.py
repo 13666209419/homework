@@ -4,13 +4,13 @@
 这是主入口文件，协调所有页面和模块。
 """
 import streamlit as st
-from .config import STREAMLIT_CONFIG
-from .utils import load_data, init_sidebar, apply_filters, init_page_style
-from .pages_overview import render_overview
-from .pages_ranking import render_ranking
-from .pages_rating import render_rating_analysis
-from .pages_location import render_location_analysis
-from .pages_genre import render_genre_analysis
+from config import STREAMLIT_CONFIG
+from utils import load_data, init_sidebar, apply_filters, init_page_style
+from pages_overview import render_overview
+from pages_ranking import render_ranking
+from pages_rating import render_rating_analysis
+from pages_location import render_location_analysis
+from pages_genre import render_genre_analysis
 
 
 def main():
