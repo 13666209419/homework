@@ -5,12 +5,6 @@
 """
 
 import streamlit as st
-import sys
-import os
-from pathlib import Path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-
 from config import STREAMLIT_CONFIG
 from utils import load_data, init_sidebar, apply_filters, init_page_style
 from pages_overview import render_overview
