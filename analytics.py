@@ -10,7 +10,7 @@ from typing import Iterable, List, Optional
 import numpy as np
 import pandas as pd
 
-from .scraper import Movie
+from scraper import Movie
 
 
 def movies_to_dataframe(movies: Iterable[Movie]) -> pd.DataFrame:

@@ -2,9 +2,9 @@
 
 import streamlit as st
 from pathlib import Path
-from app.scraper import DoubanTop250Scraper
-from app.analytics import load_cached_movies, movies_to_dataframe
-from app.config import CACHE_PATH, SCRAPER_CONFIG
+from scraper import DoubanTop250Scraper
+from analytics import load_cached_movies, movies_to_dataframe
+from config import CACHE_PATH, SCRAPER_CONFIG
 
 
 @st.cache_data

@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import itertools
 from collections import Counter
-from app.analytics import genre_popularity
+from analytics import genre_popularity
 
 
 def render_genre_analysis(filtered_df):

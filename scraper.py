@@ -1,11 +1,3 @@
-"""
-Utilities for scraping the Douban Top 250 movies list.
-
-The scraper uses `requests` together with BeautifulSoup to fetch and parse
-movie metadata from https://movie.douban.com/top250. Results are cached to
-`data/douban_top250.json` to avoid repeatedly hammering the website.
-"""
-
 from __future__ import annotations
 
 from dataclasses import dataclass, asdict

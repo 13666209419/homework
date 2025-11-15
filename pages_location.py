@@ -1,6 +1,6 @@
 import streamlit as st
 import plotly.express as px
-from app.analytics import movies_per_country
+from analytics import movies_per_country
 
 
 def render_location_analysis(filtered_df):
