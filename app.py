@@ -11,13 +11,13 @@ from pathlib import Path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 
-from src.config import STREAMLIT_CONFIG
-from src.utils import load_data, init_sidebar, apply_filters, init_page_style
-from src.pages_overview import render_overview
-from src.pages_ranking import render_ranking
-from src.pages_rating import render_rating_analysis
-from src.pages_location import render_location_analysis
-from src.pages_genre import render_genre_analysis
+from app.config import STREAMLIT_CONFIG
+from app.utils import load_data, init_sidebar, apply_filters, init_page_style
+from app.pages_overview import render_overview
+from app.pages_ranking import render_ranking
+from app.pages_rating import render_rating_analysis
+from app.pages_location import render_location_analysis
+from app.pages_genre import render_genre_analysis
 
 
 def main():
