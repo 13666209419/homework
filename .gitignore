@@ -1,0 +1,42 @@
+# Python 字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# 依赖安装目录
+dist/
+build/
+*.egg-info/
+*.dist-info/
+
+# 操作系统生成的文件
+.DS_Store  # MacOS
+Thumbs.db  # Windows
+*.swp      # Vim 临时文件
+*.swo      # Vim 临时文件
+
+# 日志文件
+*.log
+logs/
+
+# 配置文件（如果包含敏感信息，如密钥、数据库密码等）
+# 注意：如果你的 config.py 不包含敏感信息，可以删除此行
+config.py
+
+# 本地开发环境文件
+.env
+.env.local
+.idea/     # PyCharm 配置
+.vscode/   # VS Code 配置
+*.sublime-* # Sublime Text 配置
+
+# 测试相关
+.pytest_cache/
+.coverage
+htmlcov/j
