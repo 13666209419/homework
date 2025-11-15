@@ -4,6 +4,13 @@
 这是主入口文件，协调所有页面和模块。
 """
 
+import sys
+import os
+from pathlib import Path
+
+# 确保当前目录在Python路径中
+sys.path.insert(0, str(Path(__file__).parent))
+
 import streamlit as st
 from config import STREAMLIT_CONFIG
 from utils import load_data, init_sidebar, apply_filters, init_page_style
