@@ -1,5 +1,5 @@
 import streamlit as st
-from src.analytics import rating_summary, votes_summary
+from app.analytics import rating_summary, votes_summary
 
 
 def render_overview(filtered_df, df):
