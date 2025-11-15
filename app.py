@@ -7,9 +7,7 @@
 import sys
 import os
 from pathlib import Path
-
-# 确保当前目录在Python路径中
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import streamlit as st
 from config import STREAMLIT_CONFIG
