@@ -9,18 +9,15 @@ import sys
 import os
 from pathlib import Path
 
-# 确保可以导入本地模块
-app_dir = os.path.dirname(os.path.abspath(__file__))
-if app_dir not in sys.path:
-    sys.path.insert(0, app_dir)
 
-from config import STREAMLIT_CONFIG
-from utils import load_data, init_sidebar, apply_filters, init_page_style
-from pages_overview import render_overview
-from pages_ranking import render_ranking
-from pages_rating import render_rating_analysis
-from pages_location import render_location_analysis
-from pages_genre import render_genre_analysis
+
+from src.config import STREAMLIT_CONFIG
+from src.utils import load_data, init_sidebar, apply_filters, init_page_style
+from src.pages_overview import render_overview
+from src.pages_ranking import render_ranking
+from src.pages_rating import render_rating_analysis
+from src.pages_location import render_location_analysis
+from src.pages_genre import render_genre_analysis
 
 
 def main():

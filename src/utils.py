@@ -4,7 +4,7 @@ import streamlit as st
 from pathlib import Path
 from src.scraper import DoubanTop250Scraper
 from src.analytics import load_cached_movies, movies_to_dataframe
-from config import CACHE_PATH, SCRAPER_CONFIG
+from src.config import CACHE_PATH, SCRAPER_CONFIG
 
 
 @st.cache_data
