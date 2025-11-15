@@ -6,10 +6,13 @@
 
 import streamlit as st
 import sys
+import os
 from pathlib import Path
 
 # 确保可以导入本地模块
-sys.path.insert(0, str(Path(__file__).parent))
+app_dir = os.path.dirname(os.path.abspath(__file__))
+if app_dir not in sys.path:
+    sys.path.insert(0, app_dir)
 
 from config import STREAMLIT_CONFIG
 from utils import load_data, init_sidebar, apply_filters, init_page_style
